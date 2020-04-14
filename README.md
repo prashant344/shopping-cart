@@ -2,7 +2,7 @@ This project is a Shopping cart ecommerce website demo. It has two pages. The la
 
 ## Available Scripts
 
-In the project directory, you can run: http://prashant344.github.io/shopping-cart/dashboard
+In the project directory, you can run: http://prashant344.github.io/shopping-cart/
 
 ### `npm start`
 
