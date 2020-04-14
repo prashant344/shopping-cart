@@ -64,7 +64,7 @@ class ShoppingCartRaw extends React.Component {
       ) : (
         <img
           className={"empty-cart"}
-          src={emptyCartImage.src}
+          src={process.env.PUBLIC_URL + emptyCartImage.src}
           alt={emptyCartImage.title}
         />
       )}

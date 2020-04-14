@@ -15,7 +15,7 @@ class ShoppingCartButton extends React.Component {
   }
   render() {
     return (
-        <Link className={"shoppingCartButton"} to={"/shopping-cart"}>
+        <Link className={"shoppingCartButton"} to={"/shopping-cart/cart"}>
           <FontAwesomeIcon
             icon={faShoppingCart}
             style={{

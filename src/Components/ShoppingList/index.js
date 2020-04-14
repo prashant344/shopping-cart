@@ -73,7 +73,7 @@ class ShoppingList extends React.Component {
         <div className={"no-result"}>
           <img
             className={"no-result-image"}
-            src={searchNoResultImage.src}
+            src={process.env.PUBLIC_URL + searchNoResultImage.src}
             alt={searchNoResultImage.title}
           />
         </div>
