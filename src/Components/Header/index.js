@@ -9,7 +9,7 @@ import "./index.scss";
 
 const Header = ({ items, searchProduct, products }) => (
   <div className={"header"}>
-    <Link to={"/"}>
+    <Link to={"/shopping-cart"}>
       <FontAwesomeIcon
         icon={faStar}
         style={{ color: "#f7ad22" }}
