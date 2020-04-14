@@ -1,0 +1,173 @@
+.shoppingCartContainer {
+  display: flex;
+  background-color: #f1f3f6;
+  padding: 100px;
+  .shoppingCart {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    .itemContainer {
+      border: 1px solid #bcbdbf;
+      margin: 10px;
+      flex-direction: row;
+      display: flex;
+      padding: 20px;
+      position: relative;
+      background-color: #ffffff;
+      .image {
+        width: 100px;
+        height: 100px;
+      }
+      .productInfo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .productDetails {
+        width: 30%;
+        text-align: left;
+      }
+      .productTitle {
+        padding-top: 15px;
+      }
+      .productPriceDetail {
+        text-align: left;
+        padding-top: 10px;
+      }
+      .actualPrice,
+      .displayPrice,
+      .discountPrice {
+        padding-right: 10px;
+      }
+      .actualPrice {
+        font-weight: bold;
+      }
+      .displayPrice {
+        text-decoration: line-through;
+        color: #827f7f;
+      }
+      .discountPrice {
+        color: #388e3b;
+        font-weight: 700;
+      }
+      .incDecButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        button {
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          outline: none;
+          margin-right: 10px;
+          margin-left: 10px;
+          cursor: pointer;
+          background: #fff;
+        }
+        input {
+          width: 36px;
+          height: 22px;
+          padding-left: 2px;
+          text-align: center;
+          border: 1px solid #bcbdbf;
+        }
+      }
+      .removeButtonContainer {
+        width: 30%;
+        align-self: center;
+        button {
+          font-weight: bold;
+          border: none;
+          background-color: #ffffff;
+          font-size: 14px;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .rightPanel {
+    width: 20%;
+    border: 1px solid #bcbdbf;
+    margin: 10px;
+    height: 160px;
+    display: flex;
+    background-color: #ffffff;
+    .priceDetails {
+      width: 100%;
+      .priceDetailLabel {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #bcbdbf;
+        font-weight: bold;
+        color: #8d8d8d;
+      }
+    }
+    .priceLabel {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .discountLabel {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #bcbdbf;
+    }
+    .payableAmountLabel {
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shoppingCartContainer {
+    padding: 100px 10px;
+    flex-direction: column;
+    .shoppingCart {
+      width: 100%;
+    }
+    .rightPanel {
+      width: 98%;
+    }
+    .productInfo {
+      flex-direction: column;
+      padding-left: 10px;
+    }
+    .shoppingCart .itemContainer {
+      .incDecButtons {
+        justify-content: flex-start;
+        width: 100%;
+      }
+      .removeButtonContainer {
+        width: auto;
+        align-self: flex-start;
+        padding-top: 5px;
+      }
+      .productTitle {
+        padding-top: 0px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1020px) {
+  .shoppingCartContainer {
+    padding: 100px 10px;
+    .rightPanel {
+      width: 28%;
+    }
+    .shoppingCart {
+      .itemContainer {
+        padding: 5px;
+        .productPriceDetail {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

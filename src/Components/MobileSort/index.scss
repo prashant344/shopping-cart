@@ -1,0 +1,52 @@
+.mobileSort {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .mobileSort {
+    display: block;
+    top: 38%;
+    position: fixed;
+    background: #fff;
+    width: 44%;
+    height: 44%;
+    text-align: left;
+    z-index: 2;
+    max-height: 200px;
+    font-weight: bold;
+    color: #929292;
+    .title {
+      font-weight: bold;
+      padding: 10px;
+      color: black;
+    }
+    div {
+      padding: 8px;
+    }
+    button {
+      width: 50%;
+      padding: 15px;
+      border: 1px solid #87888a;
+      background: #fff;
+      border-left: 0;
+      bottom: 0;
+      position: absolute;
+      color: #4269EA;
+      font-weight: bold;
+    }
+    .cancelBtn {
+        left: 0;
+    }
+    .applyBtn {
+        right: 0;
+    }
+  }
+  .overlay {
+    width: 100%;
+    background: #87888a;
+    position: fixed;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 1;
+  }
+}

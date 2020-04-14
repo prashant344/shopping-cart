@@ -1,0 +1,20 @@
+.minValueLabel {
+  float: left;
+  font-weight: bold;
+  color: rgb(165, 168, 170);
+}
+.maxValueLabel {
+  float: right;
+  font-weight: bold;
+  color: rgb(165, 168, 170);
+}
+.MuiSlider-track {
+  background-color: #5377eb !important;
+}
+.MuiSlider-thumb {
+  color: #fff !important;
+  border: 1px solid black;
+}
+.MuiSlider-valueLabel {
+  color: #5377eb !important;
+}

@@ -1,0 +1,90 @@
+.productListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  .productContainer {
+    display: flex;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 20px;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    .productTitle,
+    .productPriceDetail {
+      text-align: left;
+      padding-left: 20px;
+      padding-top: 10px;
+    }
+    .productImage {
+      width: 150px;
+      height: 150px;
+      margin: 20px;
+    }
+    .actualPrice,
+    .displayPrice,
+    .discountPrice {
+      padding-right: 10px;
+    }
+    .actualPrice {
+      font-weight: bold;
+    }
+    .displayPrice {
+      text-decoration: line-through;
+      color: #827f7f;
+    }
+    .discountPrice {
+      color: #388e3b;
+      font-weight: 700;
+    }
+    .addToCartBtn {
+      background: #f7ad22;
+      padding: 10px;
+      width: 100px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      margin: 10px auto;
+      outline: none;
+      cursor: pointer;
+    }
+    .image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+.spinnerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  .spinner {
+    border: 2px solid dodgerblue;
+    border-top-color: white;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 50%;
+    animation: rotation 0.8s ease infinite;
+  }
+}
+.no-result-image {
+  width: 500px;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .productListContainer {
+    justify-content: center;
+  }
+}

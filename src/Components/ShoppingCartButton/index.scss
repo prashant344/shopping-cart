@@ -1,0 +1,23 @@
+.shoppingCartButton {
+    margin-right: 80px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    .itemsCount {
+        margin-right: 80px;
+        position: absolute;
+        left: 20px;
+        bottom: 12px;
+        color: #fff;
+        border-radius: 50%;
+        width: 16px;
+        background: #E82B2B;
+        border: 1px solid #E82B2B;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .shoppingCartButton {
+       margin-right: 20px;
+    }
+}

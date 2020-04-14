@@ -1,0 +1,21 @@
+.dashboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #f1f3f6;
+  .rightPane {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dashboard .rightPane {
+    margin-top: 52px;
+  }
+}
